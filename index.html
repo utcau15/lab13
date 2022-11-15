@@ -18,6 +18,56 @@
     />
   </head>
   <body>
+    <header>
+      <!-- khung         kich co co gian  mau chu     tao fixed tren dau  background mau den         -->
+      <div class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">Carousel</a>
+          <!-- collapse la thu gon thanh cong cu vao hop..giong hamburgur -->
+          <!-- navbar-toggler thu gon giong hamburgur -->
+          <!-- databstarget co id navbarcollapse ket noi voi the div-ul-li -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- day la icon hamburgr va button co ghi thuoc tinh..khi nhap vao no the div o sau div-ul-li xuat hien-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- ul thi sai navbar-nav me-auto chuyen tu dong    navbar-expand-md toi 768 thif ul xuat hien -->
+            <ul class="navbar-nav me-auto md-2 mb-md-0">
+              <!-- li thi sai nav-item -->
+              <li class="nav-item">
+                <!-- a thi sai nav-link -->
+                <a href="#" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Link</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" aria-current="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <!-- the hien vi tri iem dang duoc active -->
@@ -47,45 +97,51 @@
       <div class="carousel-inner">
         <div class="carousel-item active bg-image1">
           <div class="container">
-            <div class="p-5 text-start shadow-1-strong rounded mb-5 text-white">
-              <h1 class="mb-3 h2">Example headline</h1>
-              <p>
-                Some representative placeholder content for the first slide of
-                the carousel
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
-              </p>
+            <div class="d-flex align-items-end">
+              <div class="p-5 text-start my-5 text-white">
+                <h1 class="mb-1">Example headline</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary">Sign up today</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item bg-image2">
           <div class="container">
-            <div
-              class="p-5 text-center shadow-1-strong rounded mb-5 text-white"
-            >
-              <h1 class="mb-3 h2">Another example headline</h1>
-              <p>
-                Some representative placeholder content for the first slide of
-                the carousel
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">learn more</a>
-              </p>
+            <div class="d-flex align-items-end">
+              <div
+                class="p-5 text-center my-5 text-white"
+              >
+                <h1 class="mb-1">Another example headline</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary">learn more</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item bg-image3">
           <div class="container">
-            <div class="p-5 text-end shadow-1-strong rounded mb-5 text-white">
-              <h1 class="mb-3 h2">One mor for good measure</h1>
-              <p>
-                Some representative placeholder content for the first slide of
-                the carousel
-              </p>
-              <p>
-                <a href="#" class="btn btn-lg btn-primary">Brose gallery</a>
-              </p>
+            <div class="d-flex align-items-end">
+              <div class="p-5 text-end my-5 text-white">
+                <h1 class="mb-1">One mor for good measure</h1>
+                <p>
+                  Some representative placeholder content for the first slide of
+                  the carousel
+                </p>
+                <p>
+                  <a href="#" class="btn btn-lg btn-primary">Brose gallery</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
